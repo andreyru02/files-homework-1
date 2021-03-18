@@ -52,11 +52,7 @@ class Merging:
                     line_count += 1
                     count_line_file[file] = line_count
 
-        # сортировка файлов по количеству строк
-        # line = []
-        # for key, value in count_line_file.items():
-        #     line.append(value)
-        #     line.sort()
+        # Сортировка файлов и запись
         list_d = list(count_line_file.items())
         list_d.sort(key=lambda i: i[1])
 
